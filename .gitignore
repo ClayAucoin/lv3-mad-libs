@@ -1,0 +1,17 @@
+node_modules/
+secret-variables.js
+
+# editor / logs
+.vscode/
+
+# virtual environment directories
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# OS cruft
+.DS_Store
+Thumbs.db
