@@ -1,0 +1,13 @@
+.formWidth {
+    width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.myButton {
+    width: 200px;
+    height: 75px;
+    /* for multi-line buttons */
+    /* height: 50px; */
+    /* for single line buttons */
+}

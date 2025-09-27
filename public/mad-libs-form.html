@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js'></script> -->
+    <!-- <link rel='stylesheet' href='/css/style.css' type='stylesheet'>
+    <link rel='stylesheet' href='/css/modal-html-style.css' type='stylesheet'> -->
+
+    <title>Mad Libs</title>
+    <!-- <link rel='icon' href='/images/favicon.ico' type='image/x-icon'> -->
+</head>
+
+
+<body>
+    <div id="mainDiv" class="container-sm mt-3 p-5 bg-primary text-white">
+        <div class="text-center pb-5">
+            <h1>Mad Libs!</h1>
+            <h3>Learning to drive</h3>
+        </div>
+
+        <!--form div -->
+        <div id="formContainer">
+            <form id="myForm" action="/create-mad-libs" method="get">
+
+                <div class="row mb-3">
+                    <label for="pn" class="col-sm-3 col-form-label">Plural Noun</label>
+                    <div class="col-sm-9"><input id="pn" name="pn" type="text" class="form-control" value="Happy's">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="n1" class="col-sm-3 col-form-label">Noun</label>
+                    <div class="col-sm-9"><input id="n1" name="n1" type="text" class="form-control" value="cat"></div>
+                </div>
+                <div class="row mb-3">
+                    <label for="n2" class="col-sm-3 col-form-label">Noun</label>
+                    <div class="col-sm-9"><input id="n2" name="n2" type="text" class="form-control" value="dog"></div>
+                </div>
+                <div class="row mb-3">
+                    <label for="s" class="col-sm-3 col-form-label">Song</label>
+                    <div class="col-sm-9"><input id="s" name="s" type="text" class="form-control"
+                            value="The Song Remains The Same">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="v" class="col-sm-3 col-form-label">Verb</label>
+                    <div class="col-sm-9"><input id="v" name="v" type="text" class="form-control" value="run"></div>
+                </div>
+
+                <!-- Type SUBMIT button - FORM tags needed -->
+                <div class="text-end"><button id="submitButton" type="submit"
+                        class="btn btn-danger myButton">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- result div -->
+        <div id="resultContainer" class="d-none fs-3">
+            <div id="resultDiv"></div>
+
+            <!-- type RESET button - FORM tags needed -->
+            <div class="text-center mt-4"><button id="resetButton" type="reset" class="btn btn-danger myButton">Start
+                    Again<br>type=RESET</button>
+            </div>
+
+            <!-- type BUTTON button - no FORM tags needed -->
+            <div class="text-center mt-2"><button id="resetForm" type="button" class="btn btn-danger myButton">Start
+                    Again<br>type=BUTTON</button>
+            </div>
+        </div>
+</body>
+
+</html>
