@@ -23,7 +23,6 @@ app.get("/create-mad-libs", (req, res) => {
     console.log(sPass);
     console.log(vPass);
 
-    orders.push(``)
     let output = `
         <!doctype html>
         <html lang='en'>
