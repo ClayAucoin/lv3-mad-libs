@@ -2,8 +2,6 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// const orders = [];
-
 // static middleware
 app.use(express.static('public'));
 
