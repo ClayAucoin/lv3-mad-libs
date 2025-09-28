@@ -4,6 +4,7 @@ const PORT = 3000;
 
 // const orders = [];
 
+// static middleware
 app.use(express.static('public'));
 
 // home route
@@ -11,6 +12,7 @@ app.get("/", (req, res) => {
     res.send("<h1>Welcome to My Express Server!</h1>");
 });
 
+// response page route
 app.get("/create-mad-libs", (req, res) => {
     const properNoun = req.query.pn;
     const noun1 = req.query.n1;
