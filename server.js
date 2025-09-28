@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-const orders = [];
+// const orders = [];
+
 app.use(express.static('public'));
 
 // home route
@@ -11,17 +12,17 @@ app.get("/", (req, res) => {
 });
 
 app.get("/create-mad-libs", (req, res) => {
-    const pnPass = req.query.pn;
-    const n1Pass = req.query.n1;
-    const n2Pass = req.query.n2;
-    const sPass = req.query.s;
-    const vPass = req.query.v;
+    const properNoun = req.query.pn;
+    const noun1 = req.query.n1;
+    const noun2 = req.query.n2;
+    const song = req.query.s;
+    const verb = req.query.v;
 
-    console.log(pnPass);
-    console.log(n1Pass);
-    console.log(n2Pass);
-    console.log(sPass);
-    console.log(vPass);
+    console.log(properNoun);
+    console.log(noun1);
+    console.log(noun2);
+    console.log(song);
+    console.log(verb);
 
     let output = `
         <!doctype html>
@@ -36,10 +37,10 @@ app.get("/create-mad-libs", (req, res) => {
             <div id='resultContainer' class='fs-3'>
                 <div id='resultDiv'>
                     Learning to drive is a tricky process. There are a few rules you must follow.<br><br>
-                    1. Keep two <b>${pnPass}</b> on the steering wheel at all times.<br><br>
-                    2. Step on the <b>${n1Pass}</b> to speed up and the <b>${n2Pass}</b> to slow down.<br><br>
-                    3. Your parents will just LOVE it if you play <b>&quot;${sPass}&quot;</b> on the radio.<br><br>
-                    4. Make sure to honk your horn when you see <b>${vPass}</b> on a street sign
+                    1. Keep two <b>${properNoun}</b> on the steering wheel at all times.<br><br>
+                    2. Step on the <b>${noun1}</b> to speed up and the <b>${noun2}</b> to slow down.<br><br>
+                    3. Your parents will just LOVE it if you play <b>&quot;${song}&quot;</b> on the radio.<br><br>
+                    4. Make sure to honk your horn when you see <b>${verb}</b> on a street sign
                 </div>
 
                 <div class='text-center mt-4'>
